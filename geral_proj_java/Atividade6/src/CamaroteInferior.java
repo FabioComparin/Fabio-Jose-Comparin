@@ -1,11 +1,27 @@
 public class CamaroteInferior extends Vip {
-    public String localizacao = "local";
 
-    public void imprimeLugar(){
-        System.out.println(localizacao);
+    public float valorCamInf(){
+        return super.valor + super.valorAdd;
     }
 
-    public void imprimeValor(){
-        System.out.println("valor Ingrsso:" + ingVip());
+    public CamaroteInferior() {
+        super();
+        this.localizacao = localizacao;
+    }
+
+    public String localizacao = "local";
+
+    public String getLocalizacao() {
+        return localizacao;
+    }
+
+    public void setLocalizacao(String localizacao) {
+        this.localizacao = localizacao;
+    }
+
+    @Override
+    public void imprimeValor() {
+        System.out.println("valor do Ingresso Camarote Inferior: " + valorCamInf());
+        System.out.println("Localização do ingresso: " + localizacao);
     }
 }

@@ -1,16 +1,25 @@
 public class Ingresso {
-    public static float valor = 100;
 
-    public void imprimeValor(){
-        System.out.println("valor Ingrsso:" + valor);
+    public  float valor;
+
+    public Ingresso() {
+
     }
 
-    public float getValor(){
+
+    public void imprimeValor(){
+        System.out.println("valor do Ingresso: " + valor);
+    }
+
+    public Ingresso(float valor) {
+        this.valor = valor;
+    }
+
+    public float getValor() {
         return valor;
     }
 
-    public void setValor(){
-
+    public void setValor(float valor) {
+        this.valor = valor;
     }
-
 }
